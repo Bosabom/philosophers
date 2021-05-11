@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Serialization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 namespace Hotel_1._0
 {
     [Serializable]
-    class ListOfGuests
+    public class AvailableRooms
     {
-        public List<Guest> guests=new List<Guest>();
-        public ListOfGuests() { }
+        public List<Room> av_rooms = new List<Room>();
+        public AvailableRooms() { }
     }
 }
